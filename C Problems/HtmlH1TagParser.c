@@ -1,9 +1,13 @@
-// This program takes h1 tag as a string, and parses it to get and print the contents of the heading and remove preceeding or succeeding spaces
+// This program takes an HTML tag, and parses it to get and print the contents of the heading and remove preceeding or succeeding spaces
 #include<stdio.h>
 #include<string.h>
 void parseAndPrint(char arr[]){
-    for (int i = 0; i < 4; i++){
+    char* ptrr = strchr(arr,'>');
+    for (int i = 0; i < 20; i++){
         arr[i] = ' ';
+        if (&arr[i] == ptrr){
+            break;
+        }
     }
     char* ptr = strchr(arr,'<');
 
