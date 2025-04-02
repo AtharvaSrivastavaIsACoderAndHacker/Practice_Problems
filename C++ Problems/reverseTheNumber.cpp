@@ -21,6 +21,7 @@ int main(int argc, char const *argv[]){
     }
 
     cout<<reverseNumber<<endl;
+    if(reverseNumber==x)cout<<"Palindrome !"<<endl;
 
     return 0;
 } 
