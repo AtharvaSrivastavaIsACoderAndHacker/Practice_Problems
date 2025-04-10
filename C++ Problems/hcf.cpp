@@ -80,8 +80,8 @@ int main(int argc, char const *argv[]){
     cin>>x>>y;
     
     int num1, num2;
-    if (x>y){num1 = x;num2 = y;}
-    else if (y>x){num1 = y;num2 = x;}
+    if (x>y){num1 = x-y;num2 = y;}
+    else if (y>x){num1 = y-x;num2 = x;}
 
     int hcf = 0;
     for (int i = min(num1, num2); i >= 1; i--){
