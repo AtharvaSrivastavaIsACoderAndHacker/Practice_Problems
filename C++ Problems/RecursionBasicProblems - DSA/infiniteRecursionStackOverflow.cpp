@@ -3,7 +3,7 @@
 using namespace std;
 
 static int x = 0;
-
+ 
 void printt(){
     cout<<x<<endl;
     x++;
