@@ -1,7 +1,7 @@
 #include<iostream>
 
 using namespace std;
- 
+  
 static int x = 0;
  
 void printt(){
